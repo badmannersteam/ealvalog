@@ -19,6 +19,16 @@
 apply plugin: 'org.jetbrains.kotlin.jvm'
 apply plugin: 'java'
 
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+compileJava {
+    options.encoding = "utf-8"
+}
+compileTestJava {
+    options.encoding = "utf-8"
+}
+
 version = VERSION_NAME
 
 jar {
